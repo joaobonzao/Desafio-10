@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class MediaPosicoesPares {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] v = new int[10];
+        int soma = 0;
+        int cont = 0;
+
+        
+        System.out.println("Digite 10 números inteiros:");
+        for (int i = 0; i < v.lenght; i++) {
+            System.out.print("Elemento [" + i + "]: ");
+            v[i] = scanner.nextInt();
+        }
+
+        
+        for (int i = 0; i < vetor.length; i += 2) { 
+            soma += v[i];
+            cont++;
+        }
+
+        double media = (double) soma / cont;
+
+        System.out.println("A média dos valores nas posições pares é: " + media);
+        
+    }
+}
