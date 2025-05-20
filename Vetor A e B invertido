@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class MultiplicaVetores {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] vA = new int[10];
+        int[] vB = new int[10];
+        int[] v = new int[10];
+
+        System.out.println("Digite os 10 elementos do vetor A:");
+        for (int i = 0; i < 10; i++) {
+            System.out.print("A[" + i + "]: ");
+            vA[i] = scanner.nextInt();
+        }
+
+        System.out.println("\nDigite os 10 elementos do vetor B:");
+        for (int i = 0; i < 10; i++) {
+            System.out.print("B[" + i + "]: ");
+            vB[i] = scanner.nextInt();
+        }
+
+        for (int i = 0; i < 10; i++) {
+            v[i] = vA[i] * vB[i];
+        }
+
+        System.out.println("\nVetor Resultado da multiplicação (A[i] * B[i]):");
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Resultado[" + i + "] = " + v[i]);
+        }
+
+    }
+}
